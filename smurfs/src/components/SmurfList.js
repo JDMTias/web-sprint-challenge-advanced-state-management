@@ -8,7 +8,7 @@ import Smurf from './smurf'
 
 const SmurfList = () => {
     const [smurf, setSmurf] = useContext(SmurfContext)
-
+    // axios.get could go here...
     return(
         <div>
             <h1></h1>

@@ -19,11 +19,12 @@ const AddSmurf = () => {
   };
   const smurfSubmit = (e) => {
     e.preventDefault();
+    // axios post might go in here?
     setSmurf();
   };
 
   return (
-    <form>
+    <form onSubmit={smurfSubmit}>
       <input
         type="text"
         placeholder="name"
@@ -45,7 +46,7 @@ const AddSmurf = () => {
         value={smurfInfo.height}
         onChange={changeHandler}
       />
-      <button>Add a Smurf!</button>
+      <button type='submit'>Add a Smurf!</button>
     </form>
   );
 };
