@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
 import {SmurfContext} from '../context/smurfContext'
 
-const Smurf = () => {
+const Smurf = ({smurf}) => {
 
-    const [smurf, setSmurf] = useContext(SmurfContext)
-
+    // const [smurf, setSmurf] = useContext(SmurfContext)
+    console.log(smurf)
 
     return(
         <div>

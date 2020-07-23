@@ -17,15 +17,17 @@ const SmurfList = () => {
       })
 
       .catch((err) => console.log(err));
-    return (
+   
+  }, []);
+  
+  return (
       <div>
         {smurf.map((smurf) => (
         
-          <Smurf/>
+          <Smurf smurf={smurf}/>
         ))}
       </div>
-    );
-  }, []);
+  )
 };
 
 export default SmurfList;
