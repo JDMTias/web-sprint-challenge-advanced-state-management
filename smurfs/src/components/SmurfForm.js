@@ -1,17 +1,17 @@
 import React, { useState,useContext } from "react";
 import {SmurfContext} from '../context/smurfContext'
 
-const initialSmurf = [
-  {
-    name: "",
-    age: "",
-    height: "",
-    id: new Date(),
-  },
-];
+// const initialSmurf = [
+//   {
+//     name: "",
+//     age: "",
+//     height: "",
+//     id: new Date(),
+//   },
+// ];
 
 const AddSmurf = () => {
-  const [smurfInfo, setSmurfInfo] = useState(initialSmurf);
+  const [smurfInfo, setSmurfInfo] = useState();
   const [smurf, setSmurf] = useContext(SmurfContext)
 
   const changeHandler = (e) => {

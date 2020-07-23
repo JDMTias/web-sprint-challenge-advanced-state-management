@@ -12,4 +12,4 @@ Actions send data from our app to the redux store, they are the only source of i
 its a middleware that looks at every action that passes through and if its a function it calls that function, it makes actions a function instead of just being an object 
 
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
-Context Api I really like because it is simple, however Redux I think will be able to handle a lot more complex things and keep your code reusable since you have custom hooks and a centrlized source of state that you can always pull from 
+Context Api I really like because it is simple, however Redux I think will be able to handle a lot more complex things and keep your code reusable since you have custom hooks and a centralized source of state that you can always pull from 
