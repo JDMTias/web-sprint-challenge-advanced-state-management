@@ -11,11 +11,11 @@ import {SmurfContext} from '../context/smurfContext'
 // ];
 
 const AddSmurf = () => {
-  const [smurfInfo, setSmurfInfo] = useState();
+  // const [smurfInfo, setSmurfInfo] = useState();
   const [smurf, setSmurf] = useContext(SmurfContext)
 
   const changeHandler = (e) => {
-    setSmurfInfo(e.target.value);
+    setSmurf(e.target.value);
   };
   const smurfSubmit = (e) => {
     e.preventDefault();
@@ -29,21 +29,21 @@ const AddSmurf = () => {
         type="text"
         placeholder="name"
         name="name"
-        value={smurfInfo.name}
+        value={smurf.name}
         onChange={changeHandler}
       />
       <input
         type="text"
         placeholder="age"
         name="age"
-        value={smurfInfo.age}
+        value={smurf.age}
         onChange={changeHandler}
       />
       <input
         type="text"
         placeholder="height"
         name="height"
-        value={smurfInfo.height}
+        value={smurf.height}
         onChange={changeHandler}
       />
       <button type='submit'>Add a Smurf!</button>
